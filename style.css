@@ -1,0 +1,138 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navegación */
+header {
+    background-color: #006699;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-menu li a:hover {
+    background-color: #005580;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+/* Estilos de sección */
+.section {
+    padding: 4em 1em;
+    text-align: center;
+}
+
+h2 {
+    color: #006699;
+    margin-bottom: 1em;
+}
+
+/* Contenedor de perfiles */
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.profile-card {
+    width: 250px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-card h3 {
+    color: #006699;
+    margin-bottom: 0.5em;
+}
+
+/* Contenedor general */
+.content {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Flexbox para responsive */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+
+/* Estilos para la tabla de perfiles de investigación */
+table.research-profiles {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 0.9em;
+}
+
+table.research-profiles th, table.research-profiles td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.research-profiles th {
+    background-color: #006699;
+    color: white;
+    font-weight: bold;
+}
+
+table.research-profiles tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.research-profiles tr:hover {
+    background-color: #ddd;
+}
