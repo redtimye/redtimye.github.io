@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-menu li {
@@ -58,6 +59,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
     border-radius: 8px;
+    max-width: 90%;
 }
 
 /* Estilos de sección */
@@ -79,6 +81,7 @@ h2 {
     gap: 2em;
 }
 
+/* Tarjetas de perfil */
 .profile-card {
     width: 250px;
     padding: 1em;
@@ -88,11 +91,6 @@ h2 {
     text-align: left;
 }
 
-.profile-card h3 {
-    color: #006699;
-    margin-bottom: 0.5em;
-}
-
 /* Contenedor general */
 .content {
     padding: 2em;
@@ -100,16 +98,7 @@ h2 {
     margin: auto;
 }
 
-/* Flexbox para responsive */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-
-/* Estilos para la tabla de perfiles de investigación */
+/* Tabla de perfiles de investigación */
 table.research-profiles {
     width: 100%;
     border-collapse: collapse;
@@ -136,3 +125,37 @@ table.research-profiles tr:nth-child(even) {
 table.research-profiles tr:hover {
     background-color: #ddd;
 }
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero .container {
+        padding: 1em;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .profiles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table.research-profiles, table.research-profiles th, table.research-profiles td {
+        font-size: 0.8em;
+    }
+
+    .profile-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
